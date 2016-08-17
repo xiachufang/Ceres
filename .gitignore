@@ -27,3 +27,8 @@ nohup.out
 ./tags
 .flake8rc
 ./Thumbs.db
+
+# Config
+test_config.py
+dev_config.py
+online_config.py

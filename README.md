@@ -47,3 +47,9 @@ export PATH="/home/ceres/miniconda2/bin:$PATH"
 source activate ceres
 export PYTHONPATH="/home/ceres/Ceres"
 ```
+
+### 创建数据库
+
+```
+python Ceres/ceres/tool/create_databases_and_tables.py
+```
