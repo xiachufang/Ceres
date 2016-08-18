@@ -32,4 +32,4 @@ class Token(BaseModel):
         return cls.create(token_str=token_str, update_time=update_time, expire_time=expire_time)
 
     def is_expired(self):
-        return self.expire_time > datetime.datetime.now()
+        return self.expire_time < datetime.datetime.now()

@@ -15,3 +15,12 @@ def test_token_create_and_get():
 def test_token_auto_create():
     token = Token.get_token()
     assert token
+
+
+def test_token_is_expired():
+    now = datetime.datetime.now()
+    update_time = now - datetime.timedelta(0, 7300)
+    expire_time = update_time + datetime.timedelta(0, 7200)
+    Token.create(token_str='tttt', update_time=update_time, expire_time=expire_time)
+    token = Token.get()
+    assert token.is_expired()
