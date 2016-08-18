@@ -53,3 +53,9 @@ export PYTHONPATH="/home/ceres/Ceres"
 ```
 python Ceres/ceres/tool/create_databases_and_tables.py
 ```
+
+## TODO
+
+- [ ] 回复「报销单」和「月报销单」时候的回复优化，加时间段，没内容时做处理
+- [ ] 生成汇总 Excel
+- [ ] 默认只能加入当天的报销单（有需要可以后缀 “!” 强制操作）
